@@ -1,0 +1,19 @@
+name = "CodeCarbon"
+uuid = "29d04cc0-9cd8-4993-a769-aa26f389fced"
+authors = ["Luciana"]
+version = "0.1.0"
+
+[deps]
+PythonCall = "6099a3de-0909-46bc-b1f4-468b9a2dfc0d"
+
+[compat]
+Aqua = "0.5"
+PythonCall = "0.9"
+julia = "1.6"
+
+[extras]
+Aqua = "4c88cf16-eb10-579e-8560-4a9242c79595"
+Test = "8dfed614-e22c-5e08-85e1-65c5234f0b40"
+
+[targets]
+test = ["Aqua", "Test"]
