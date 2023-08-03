@@ -1,5 +1,5 @@
 # CodeCarbon.jl
-Unofficial Julia wrapper of the python library `codecarbon` for tracking emissions from Compute. 
+Unofficial Julia wrapper of the Python library `codecarbon` for tracking emissions from compute. 
 
 [Python Documentation](https://mlco2.github.io/codecarbon/)  
 
