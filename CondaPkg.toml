@@ -1,2 +1,4 @@
+
 [deps]
-codecarbon = "=2"
+codecarbon = ">=2"
+dash-bootstrap-components = "<1"

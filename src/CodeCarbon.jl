@@ -27,10 +27,16 @@ macro track_emissions(expr, tracker_expr=EmissionsTracker())
     end
 end
 
+function run_carbonboard(filepath::String; port::Int=3333)
+    command = `carbonboard --filepath=$filepath --port=$port`
+    run(pipeline(command, stdout=IOBuffer()))
+end
+
 export 
 codecarbon,
 EmissionsTracker,
 OfflineEmissionsTracker,
-@track_emissions
+@track_emissions,
+run_carbonboard
 
 end # module CodeCarbon
