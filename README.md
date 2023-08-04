@@ -5,7 +5,18 @@ Unofficial Julia wrapper of the Python library `codecarbon` for tracking emissio
 
 [Python GitHub](https://github.com/mlco2/codecarbon)  
 
-## Explicit Object
+## Installation
+```julia
+Pkg> add https://github.com/COLuciana/CodeCarbon.jl
+```
+
+```
+julia> using Pkg; Pkg.add(url="https://github.com/COLuciana/CodeCarbon.jl")
+```
+
+## Usage
+
+### Explicit Object
 
 ```julia
 using CodeCarbon
@@ -15,7 +26,7 @@ tracker.start()
 tracker.stop()
 ```
 
-## Do-Block Syntax
+### Do-Block Syntax
 
 ```julia
 using CodeCarbon
@@ -27,7 +38,7 @@ EmissionsTracker() do tracker
 end
 ```
 
-## Macro
+### Macro
 
 ```julia
 using CodeCarbon
@@ -36,7 +47,7 @@ test_func() = sleep(0.5)
 @track_emissions test_func() OfflineEmissionsTracker(country_iso_code="USA")
 ```
 
-## Visualization
+### Visualization
 
 ```julia
 using CodeCarbon
