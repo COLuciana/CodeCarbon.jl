@@ -1,3 +1,6 @@
+[![CI](https://github.com/COLuciana/CodeCarbon.jl/actions/workflows/ci.yml/badge.svg)](https://github.com/COLuciana/CodeCarbon.jl/actions/workflows/CI.yml)
+
+
 # CodeCarbon.jl
 Unofficial Julia wrapper of the Python library `codecarbon` for tracking emissions from compute. 
 
