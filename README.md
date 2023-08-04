@@ -31,9 +31,9 @@ end
 
 ```julia
 using CodeCarbon
-test_func() = sleep(2)
+test_func() = sleep(0.5)
 @track_emissions test_func() EmissionsTracker()
-@track_emissions test_func() OfflineEmissionsTracker(country_iso_code="CAN")
+@track_emissions test_func() OfflineEmissionsTracker(country_iso_code="USA")
 ```
 
 ## Visualization
